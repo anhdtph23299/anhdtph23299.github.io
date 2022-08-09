@@ -69,5 +69,5 @@ public static int max(int index,int... num) {
     }
 ```
 ## 5. Lời kết
+- Không nên lạm dụng Varargs vì bản chất ,  Varargs chính là Array. Mà liên quan đến Array thì liên quan đến cấp phát bộ nhớ và hiệu năng . 
 - Nhưng tất nhiên, qua bài viết phần nào anh em cũng hình dung được varargs hữu dụng trong trường hợp nào cũng như làm sao để sử dụng varargs cho đúng cách.
-- Không nên lạm dụng Varargs vì bản chất ,  Varargs chính là Array. Mà liên quan đến Array thì liên quan đến cấp phát bộ nhớ và hiệu năng 
