@@ -1,7 +1,7 @@
 # Varargs trong Java 
-## Varargs trong Java là gì?
+## 1. Varargs trong Java là gì?
 - Varargs còn được gọi là đối số biến , nó có thể truyền vào phương thức rất là nhiều đối số .  Đối số có thể chấp nhận số lượng giá trị thay đổi này được gọi là varargs.
-## Cách sử dụng Varargs
+## 2. Cách sử dụng Varargs
 - Giả sử , ta có hai phương thức tính tổng như sau : 
 ```Java
 public int tinhTong(int a,int b){
@@ -28,7 +28,7 @@ public int tinhTong(int a,int b,int c){
         return sum;
     }
 ```
-## Lưu ý khi sử dụng Varargs  
+## 3. Lưu ý khi sử dụng Varargs  
 - Varargs có thể giải quyết được vấn đề code không trong sáng , dư thừa phương thức hay vấn đề phát sinh tham số truyền vào tuy nhiên có vài lưu ý nhỏ cho những ai sử dụng Varargs :
 
         1. Varargs luôn phải là tham số cuối cùng
@@ -36,7 +36,7 @@ public int tinhTong(int a,int b,int c){
         3. Tránh nạp chồng phương thức (Overloading)
 - Nếu không kiêng kị những điều ở trên thì việc sử dụng Varargs vào làm rõ mục đích Code trong sáng thì sai hoàn toàn . Bởi vì nếu sử dụng sai , chính bản thân phần mềm phiên dịch cũng đã không hiểu được những điều này .
 
-## Sử dụng Varargs sao cho đúng ? 
+## 4. Sử dụng Varargs sao cho đúng ? 
 Như mình đã trình bày trong các phần trước, sử dụng varargs đúng sẽ khiến cho code trở nên trong sáng, đơn giản và đạt hiệu năng cao hơn.
 - Trường hợp yêu cầu một hoặc nhiều giá trị cho tham số
   - Tham số varargs có thể nhận vào 0 hoặc nhiều giá trị. Nhưng vấn đề là có những trường hợp chúng ta mong muốn phải nhận vào ít nhật một hoặc nhiều giá trị.
@@ -68,6 +68,6 @@ public static int max(int index,int... num) {
         return max;
     }
 ```
-## Lời kết
+## 5. Lời kết
 - Nhưng tất nhiên, qua bài viết phần nào anh em cũng hình dung được varargs hữu dụng trong trường hợp nào cũng như làm sao để sử dụng varargs cho đúng cách.
 - Không nên lạm dụng Varargs vì bản chất ,  Varargs chính là Array. Mà liên quan đến Array thì liên quan đến cấp phát bộ nhớ và hiệu năng 
